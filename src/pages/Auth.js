@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE, MAIN_ROUTE } from "../utils/consts";
 import "./css/Auth.css";
 import { Link } from "react-router-dom";
-import { observer } from 'mobx-react-lite';
+import { observer } from "mobx-react-lite";
+import { Context } from "../index";
 
 const Auth = observer(() => {
+  const { user } = useContext(Context);
   const location = useLocation();
   console.log(location);
   const isLogin = location.pathname === LOGIN_ROUTE;
@@ -19,14 +21,20 @@ const Auth = observer(() => {
         <div className="Auth-form-inputDiv">
           <div className="Auth-form-firstInputDiv">
             <p className="Auth-form-username">Логин</p>
-            <input type="text"  className="Auth-form-input" />
+            <input type="text" className="Auth-form-input" />
           </div>
           <div className="Auth-form-secondInputDiv">
             <p className="Auth-form-username">Пароль</p>
-            <input type="text"  className="Auth-form-input" />
+            <input type="text" className="Auth-form-input" />
           </div>
         </div>
-        <button className="Auth-form-login">
+        <button
+          className="Auth-form-login"
+          onClick={() => {
+            user.setIsAuth(true);
+            window.scroll({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           {isLogin ? "Войти" : "Зарегистрироваться"}
         </button>
         <div className="Auth-form-registration">

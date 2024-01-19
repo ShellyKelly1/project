@@ -22,7 +22,7 @@ export const authRoutes = [
     Component: <Basket />,
   },
 ];
-
+//
 export const publicRoutes = [
   {
     path: MAIN_ROUTE,

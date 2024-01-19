@@ -1,3 +1,9 @@
+
+body{
+  background-color: #eeeeee;
+}
+
+
 .Auth {
     margin-top: 3vw;
     display: flex;
@@ -7,8 +13,7 @@
     justify-content: center;
     padding-top: 4vw;
     flex-direction: column;
-    background-color: #eeeeee;
-    padding-bottom: 25vw;
+    padding-bottom: 8vw;
   }
   .Auth-form {
     display: flex;

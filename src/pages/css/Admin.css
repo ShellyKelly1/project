@@ -1,0 +1,7 @@
+.admin-main-div{
+    display:flex;
+    padding-top: 7vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}

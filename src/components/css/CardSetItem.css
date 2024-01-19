@@ -21,3 +21,18 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+
+
+.CardSetItem-content-label-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+}

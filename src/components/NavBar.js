@@ -100,7 +100,7 @@ const NavBar = observer(() => {
           <button
             className="NavMenu-authorization-button"
             onClick={() => {
-              user.setIsAuth(true);
+              
             }}
           >
             Авторизоваться

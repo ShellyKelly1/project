@@ -1,5 +1,8 @@
-.basket-main-div{
+body{
     background-color: #eeeeee;
+  }
+.basket-main-div{
+
     display:flex;
     justify-content: center;
     align-items: center;
