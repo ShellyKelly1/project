@@ -1,0 +1,35 @@
+.basket-main-div{
+    background-color: #eeeeee;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-dishesAndButtons{
+    margin-top: 10vw;
+    display:flex;
+    gap: 5vw
+}
+
+.basket-buttons{
+    display:flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    height: 100%;
+    position: sticky;
+}
+
+.basket-dishes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 5vw;
+    max-width: 75%;
+}
+
+.basket-dish-image{
+    width: 25vw;
+    height: 25vw;
+}

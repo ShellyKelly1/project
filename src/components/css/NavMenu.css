@@ -1,0 +1,53 @@
+.NavMenu {
+	top: 0;
+	height: 4vw;
+	width: 100%;
+	padding: 1vw 0vw 1vw 0vw;
+	overflow: hidden;
+	background-color: #006400;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	transition: transform 0.5s ease;
+	z-index: 10000;
+}
+.sticky {
+	top: -4vw;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3);
+	transform: translateY(4vw);
+}
+
+.NavMenu-text {
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: Yellow;
+}
+
+.NavMenu-authorization-button{
+    font-size: 1vw;
+    display:flex;
+    padding: 0.5vw;
+    background-color: #006400;
+    color:yellow;
+    border: 1px solid yellow;
+    border-radius: 0.5vw;
+    transition: 0.2s;
+}
+
+.NavMenu-authorization-button:hover{
+    background-color: yellow;
+    color:#006400;
+    border: 1px solid #006400;
+}
+
+.Buttons{
+    display:flex;
+    gap: 1vw;
+}
+
+.linkstyle{
+	text-decoration: none;
+}
