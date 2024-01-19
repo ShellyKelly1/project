@@ -10,7 +10,9 @@ import {
   MAIN_ROUTE,
   PRODUCT_ROUTE,
   REGISTRATION_ROUTE,
+  ADD_DISH_ROUTE,
 } from "./utils/consts";
+import AddDish from "./pages/AddDish";
 
 export const authRoutes = [
   {
@@ -20,6 +22,10 @@ export const authRoutes = [
   {
     path: BASKET_ROUTE,
     Component: <Basket />,
+  },
+  {
+    path: ADD_DISH_ROUTE,
+    Component: <AddDish />,
   },
 ];
 //
@@ -39,7 +45,7 @@ export const publicRoutes = [
     Component: <Auth />,
   },
   {
-    path: PRODUCT_ROUTE + '/:id',
+    path: PRODUCT_ROUTE + "/:id",
     Component: <ProductPage />,
   },
 ];

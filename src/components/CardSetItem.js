@@ -24,10 +24,16 @@ const CardSetItem = ({ product }) => {
           </div>
           <div className="CardSetItem-content-label-content">
             <p className="CardSetItem-content-label">{product.name}</p>
-            <p className="CardSetItem-content-label">Калории: {product.calories}</p>
+            <p className="CardSetItem-content-label">
+              Калории: {product.calories}
+            </p>
             <p className="CardSetItem-content-label">Жиры: {product.fats}</p>
-            <p className="CardSetItem-content-label">Белки: {product.proteins}</p>
-            <p className="CardSetItem-content-label">Углеводы: {product.carbohydrates}</p>
+            <p className="CardSetItem-content-label">
+              Белки: {product.proteins}
+            </p>
+            <p className="CardSetItem-content-label">
+              Углеводы: {product.carbohydrates}
+            </p>
           </div>
         </div>
       </div>
